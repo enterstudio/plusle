@@ -1,0 +1,55 @@
+@import 'normalize.css';
+
+@font-face {
+	font-family: 'pokemon-font';
+	src: url('../fonts/pokemon-font.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/pokemon-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/pokemon-font.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/pokemon-font.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/pokemon-font.ttf')  format('truetype') /* Safari, Android, iOS */
+	/* There is no SVG version of this font due to support being dropped in SVG 2 */
+  }
+  
+html {
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	font-family: 'pokemon-font', monospace;
+	color: #333;
+	font-size: 16px;
+}
+
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+
+body {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	max-width: 412px;
+	max-height: 732px;
+	position: relative;
+}
+
+img {
+	cursor: pointer;
+	image-rendering: pixelated;
+}
+
+.message {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	margin: 0;
+}
